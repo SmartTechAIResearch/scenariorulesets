@@ -1,0 +1,274 @@
+<LogRuleSets>
+  <Items>
+    <LogRuleSet>
+      <Items>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>If for instance the URL in the connection is set to "http://www.foo.com" this could be /index.htm.</Description>
+          <Label>Relative Url</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items>
+            <Rule>
+              <Items />
+              <RegExp>^GET$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <UsePasswordChar>False</UsePasswordChar>
+              <Description>
+              </Description>
+              <Label>GET</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+            <Rule>
+              <Items />
+              <RegExp>^POST$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <UsePasswordChar>False</UsePasswordChar>
+              <Description>
+              </Description>
+              <Label>POST</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+          </Items>
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>"GET" or "POST"</Description>
+          <Label>Request Method</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items>
+            <LogSyntaxItem>
+              <Items>
+                <LogSyntaxItem>
+                  <Items />
+                  <Optional>False</Optional>
+                  <Occurance>1</Occurance>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Key</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </LogSyntaxItem>
+                <LogSyntaxItem>
+                  <Items />
+                  <Optional>True</Optional>
+                  <Occurance>1</Occurance>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Value</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </LogSyntaxItem>
+              </Items>
+              <Optional>True</Optional>
+              <Occurance>0</Occurance>
+              <ChildDelimiter>=</ChildDelimiter>
+              <Description>
+              </Description>
+              <Label>KeyValuePair</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </LogSyntaxItem>
+          </Items>
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>&amp;</ChildDelimiter>
+          <Description>e.g.: "backColor=blue&amp;foreColor=red"</Description>
+          <Label>Get Data</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>e.g.: "userName=foo&amp;passwd=&amp;é"^$ùµ"</Description>
+          <Label>Post Data</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items>
+            <LogSyntaxItem>
+              <Items>
+                <LogSyntaxItem>
+                  <Items />
+                  <Optional>False</Optional>
+                  <Occurance>1</Occurance>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Key</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </LogSyntaxItem>
+                <LogSyntaxItem>
+                  <Items />
+                  <Optional>True</Optional>
+                  <Occurance>1</Occurance>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Value</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </LogSyntaxItem>
+              </Items>
+              <Optional>True</Optional>
+              <Occurance>0</Occurance>
+              <ChildDelimiter>=</ChildDelimiter>
+              <Description>
+              </Description>
+              <Label>KeyValuePair</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </LogSyntaxItem>
+          </Items>
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>;</ChildDelimiter>
+          <Description>e.g.: "AUTOLOGIN=0;CFID=156894167;CFTOKEN=64363606"</Description>
+          <Label>Cookies</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>Some websites check this to know wether it is browsed using a PC or a mobile phone, hence this is not optional.</Description>
+          <Label>User Agent</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>e.g.: "text/plain", For post this is a needed field!</Description>
+          <Label>Content Type</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>For knowing if it was a redirect.</Description>
+          <Label>Source IP</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>
+          </Description>
+          <Label>Destination IP</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>Handy to know when it was sent, used for determining parallel executed log entries (On import, record or manually).</Description>
+          <Label>Destination Host</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>Used for determining parallel executed log entries.</Description>
+          <Label>Begin Timestamp</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>
+          </Description>
+          <Label>End Timestamp</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+      </Items>
+      <SingleLineCommentString>
+      </SingleLineCommentString>
+      <BeginCommentString>&lt;!--</BeginCommentString>
+      <EndCommentString>--&gt;</EndCommentString>
+      <ActionizeOnComment>True</ActionizeOnComment>
+      <ActionizeOnFile>False</ActionizeOnFile>
+      <BeginTimestampIndex>10</BeginTimestampIndex>
+      <EndTimestampIndex>11</EndTimestampIndex>
+      <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
+      <Description>
+      </Description>
+      <Label>HTTP Log Ruleset @BRANCH@-@TM@</Label>
+      <ShowInGui>True</ShowInGui>
+      <IsDefaultItem>False</IsDefaultItem>
+      <IsEmpty>False</IsEmpty>
+    </LogRuleSet>
+  </Items>
+</LogRuleSets>
