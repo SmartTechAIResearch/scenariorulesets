@@ -119,7 +119,7 @@
       <ActionizeOnFile>True</ActionizeOnFile>
       <BeginTimestampIndex>0</BeginTimestampIndex>
       <EndTimestampIndex>0</EndTimestampIndex>
-      <Label>SMTP Log Ruleset @BRANCH@-@TM@</Label>
+      <Label>SMTP @BRANCH@-@TM@</Label>
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>

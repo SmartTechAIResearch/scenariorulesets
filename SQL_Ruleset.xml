@@ -14,7 +14,7 @@
       <ActionizeOnFile>True</ActionizeOnFile>
       <BeginTimestampIndex>0</BeginTimestampIndex>
       <EndTimestampIndex>0</EndTimestampIndex>
-      <Label>Database Log Ruleset @BRANCH@-@TM@</Label>
+      <Label>SQL @BRANCH@-@TM@</Label>
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>

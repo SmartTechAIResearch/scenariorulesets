@@ -265,7 +265,7 @@
       <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <Description>
       </Description>
-      <Label>HTTP Log Ruleset @BRANCH@-@TM@</Label>
+      <Label>HTTP @BRANCH@-@TM@</Label>
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>

@@ -54,7 +54,7 @@
       <ActionizeOnFile>True</ActionizeOnFile>
       <BeginTimestampIndex>0</BeginTimestampIndex>
       <EndTimestampIndex>0</EndTimestampIndex>
-      <Label>AMF Log Ruleset @BRANCH@-@TM@</Label>
+      <Label>AMF @BRANCH@-@TM@</Label>
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>
