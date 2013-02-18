@@ -222,7 +222,7 @@
           <Occurance>1</Occurance>
           <ChildDelimiter>
           </ChildDelimiter>
-          <Description>Handy to know when it was sent, used for determining parallel executed log entries (On import, record or manually).</Description>
+          <Description>The destination hostname.</Description>
           <Label>Destination Host</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
@@ -253,7 +253,20 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>The destination port.</Description>
+          <Label>Destination Port</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
       </Items>
+      <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <SingleLineCommentString>
       </SingleLineCommentString>
       <BeginCommentString>&lt;!--</BeginCommentString>
@@ -262,7 +275,6 @@
       <ActionizeOnFile>False</ActionizeOnFile>
       <BeginTimestampIndex>10</BeginTimestampIndex>
       <EndTimestampIndex>11</EndTimestampIndex>
-      <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <Description>
       </Description>
       <Label>HTTP @BRANCH@-@TM@</Label>
