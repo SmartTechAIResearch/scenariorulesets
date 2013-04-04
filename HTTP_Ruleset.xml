@@ -6,6 +6,8 @@
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>If for instance the URL in the connection is set to "http://www.foo.com" this could be /index.htm.</Description>
@@ -45,6 +47,8 @@
           </Items>
           <Optional>False</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>"GET" or "POST"</Description>
@@ -61,6 +65,8 @@
                   <Items />
                   <Optional>False</Optional>
                   <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
                   <ChildDelimiter>
                   </ChildDelimiter>
                   <Description>
@@ -74,6 +80,8 @@
                   <Items />
                   <Optional>True</Optional>
                   <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
                   <ChildDelimiter>
                   </ChildDelimiter>
                   <Description>
@@ -86,6 +94,8 @@
               </Items>
               <Optional>True</Optional>
               <Occurance>0</Occurance>
+              <DefaultValue>
+              </DefaultValue>
               <ChildDelimiter>=</ChildDelimiter>
               <Description>
               </Description>
@@ -97,6 +107,8 @@
           </Items>
           <Optional>False</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>&amp;</ChildDelimiter>
           <Description>e.g.: "backColor=blue&amp;foreColor=red"</Description>
           <Label>Get Data</Label>
@@ -108,6 +120,8 @@
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>e.g.: "userName=foo&amp;passwd=&amp;é"^$ùµ"</Description>
@@ -124,6 +138,8 @@
                   <Items />
                   <Optional>False</Optional>
                   <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
                   <ChildDelimiter>
                   </ChildDelimiter>
                   <Description>
@@ -137,6 +153,8 @@
                   <Items />
                   <Optional>True</Optional>
                   <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
                   <ChildDelimiter>
                   </ChildDelimiter>
                   <Description>
@@ -149,6 +167,8 @@
               </Items>
               <Optional>True</Optional>
               <Occurance>0</Occurance>
+              <DefaultValue>
+              </DefaultValue>
               <ChildDelimiter>=</ChildDelimiter>
               <Description>
               </Description>
@@ -160,6 +180,8 @@
           </Items>
           <Optional>False</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>;</ChildDelimiter>
           <Description>e.g.: "AUTOLOGIN=0;CFID=156894167;CFTOKEN=64363606"</Description>
           <Label>Cookies</Label>
@@ -171,6 +193,8 @@
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>Some websites check this to know wether it is browsed using a PC or a mobile phone, hence this is not optional.</Description>
@@ -183,6 +207,8 @@
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>e.g.: "text/plain", For post this is a needed field!</Description>
@@ -195,6 +221,8 @@
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>For knowing if it was a redirect.</Description>
@@ -207,6 +235,8 @@
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>
@@ -220,6 +250,8 @@
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>The destination hostname.</Description>
@@ -232,6 +264,8 @@
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>Used for determining parallel executed log entries.</Description>
@@ -244,6 +278,8 @@
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>
@@ -257,10 +293,24 @@
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
+          <DefaultValue>80</DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>The destination port.</Description>
           <Label>Destination Port</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>http</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>The protocol (http or https).</Description>
+          <Label>Protocol</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
