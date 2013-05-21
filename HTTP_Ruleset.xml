@@ -328,6 +328,20 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>HTTP Referer header</Description>
+          <Label>Referer</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
       </Items>
       <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <SingleLineCommentString>
