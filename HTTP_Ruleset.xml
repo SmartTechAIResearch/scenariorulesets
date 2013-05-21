@@ -315,6 +315,19 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>text/html, application/xhtml+xml, */*</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>HTTP Accept header</Description>
+          <Label>Accept</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
       </Items>
       <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <SingleLineCommentString>
@@ -322,7 +335,6 @@
       <BeginCommentString>&lt;!--</BeginCommentString>
       <EndCommentString>--&gt;</EndCommentString>
       <ActionizeOnComment>True</ActionizeOnComment>
-      <ActionizeOnFile>False</ActionizeOnFile>
       <BeginTimestampIndex>10</BeginTimestampIndex>
       <EndTimestampIndex>11</EndTimestampIndex>
       <Description>
