@@ -1,0 +1,20 @@
+<LogRuleSets>
+  <Items>
+    <LogRuleSet>
+      <Items />
+      <ChildDelimiter>
+      </ChildDelimiter>
+      <SingleLineCommentString>//</SingleLineCommentString>
+      <BeginCommentString>/*</BeginCommentString>
+      <EndCommentString>*/</EndCommentString>
+      <ActionizeOnComment>True</ActionizeOnComment>
+      <BeginTimestampIndex>0</BeginTimestampIndex>
+      <EndTimestampIndex>0</EndTimestampIndex>
+      <Description>A SQL query string.</Description>
+      <Label>Hive @BRANCH@-@TM@</Label>
+      <ShowInGui>True</ShowInGui>
+      <IsDefaultItem>False</IsDefaultItem>
+      <IsEmpty>False</IsEmpty>
+    </LogRuleSet>
+  </Items>
+</LogRuleSets>
