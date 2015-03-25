@@ -11,7 +11,7 @@
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>If for instance the URL in the connection is set to "http://www.foo.com" this could be /index.htm.</Description>
-          <Label>Relative Url</Label>
+          <Label>Relative URL</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -52,7 +52,7 @@
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>"GET" or "POST"</Description>
-          <Label>Request Method</Label>
+          <Label>Request method</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -111,7 +111,7 @@
           </DefaultValue>
           <ChildDelimiter>&amp;</ChildDelimiter>
           <Description>e.g.: "backColor=blue&amp;foreColor=red"</Description>
-          <Label>Get Data</Label>
+          <Label>Get data</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -125,66 +125,35 @@
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>e.g.: "userName=foo&amp;passwd=&amp;é"^$ùµ"</Description>
-          <Label>Post Data</Label>
+          <Label>Post data (UTF8)</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+		<LogSyntaxItem>
+          <Items />
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>e.g.: "0AB1..."</Description>
+          <Label>Post data (bytes as hex)</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
         <LogSyntaxItem>
-          <Items>
-            <LogSyntaxItem>
-              <Items>
-                <LogSyntaxItem>
-                  <Items />
-                  <Optional>False</Optional>
-                  <Occurance>1</Occurance>
-                  <DefaultValue>
-                  </DefaultValue>
-                  <ChildDelimiter>
-                  </ChildDelimiter>
-                  <Description>
-                  </Description>
-                  <Label>Key</Label>
-                  <ShowInGui>True</ShowInGui>
-                  <IsDefaultItem>False</IsDefaultItem>
-                  <IsEmpty>False</IsEmpty>
-                </LogSyntaxItem>
-                <LogSyntaxItem>
-                  <Items />
-                  <Optional>True</Optional>
-                  <Occurance>1</Occurance>
-                  <DefaultValue>
-                  </DefaultValue>
-                  <ChildDelimiter>
-                  </ChildDelimiter>
-                  <Description>
-                  </Description>
-                  <Label>Value</Label>
-                  <ShowInGui>True</ShowInGui>
-                  <IsDefaultItem>False</IsDefaultItem>
-                  <IsEmpty>False</IsEmpty>
-                </LogSyntaxItem>
-              </Items>
-              <Optional>True</Optional>
-              <Occurance>0</Occurance>
-              <DefaultValue>
-              </DefaultValue>
-              <ChildDelimiter>=</ChildDelimiter>
-              <Description>
-              </Description>
-              <Label>KeyValuePair</Label>
-              <ShowInGui>True</ShowInGui>
-              <IsDefaultItem>False</IsDefaultItem>
-              <IsEmpty>False</IsEmpty>
-            </LogSyntaxItem>
-          </Items>
-          <Optional>False</Optional>
+          <Items />
+          <Optional>True</Optional>
           <Occurance>1</Occurance>
           <DefaultValue>
           </DefaultValue>
-          <ChildDelimiter>;</ChildDelimiter>
-          <Description>e.g.: "AUTOLOGIN=0;CFID=156894167;CFTOKEN=64363606"</Description>
-          <Label>Cookies</Label>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>e.g.: "text/plain", For post this field is needed!</Description>
+          <Label>Content type</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -197,13 +166,52 @@
           </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
-          <Description>Some websites check this to know wether it is browsed using a PC or a mobile phone, hence this is not optional.</Description>
-          <Label>User Agent</Label>
+          <Description></Description>
+          <Label>Destination host</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
-        <LogSyntaxItem>
+	   <LogSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>80</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>The destination port.</Description>
+          <Label>Destination Port</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+		<LogSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>text/html, application/xhtml+xml, */*</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>HTTP accept header</Description>
+          <Label>Accept</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+		<LogSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>http</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>The protocol (http or https).</Description>
+          <Label>Protocol</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+		<LogSyntaxItem>
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
@@ -211,51 +219,8 @@
           </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
-          <Description>e.g.: "text/plain", For post this is a needed field!</Description>
-          <Label>Content Type</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>For knowing if it was a redirect.</Description>
-          <Label>Source IP</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>
-          </Description>
-          <Label>Destination IP</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>The destination hostname.</Description>
-          <Label>Destination Host</Label>
+          <Description>HTTP referer header</Description>
+          <Label>Referer</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -269,61 +234,7 @@
           <ChildDelimiter>
           </ChildDelimiter>
           <Description>Used for determining parallel executed log entries.</Description>
-          <Label>Begin Timestamp</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>False</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>
-          </Description>
-          <Label>End Timestamp</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>80</DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>The destination port.</Description>
-          <Label>Destination Port</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>http</DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>The protocol (http or https).</Description>
-          <Label>Protocol</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>text/html, application/xhtml+xml, */*</DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>HTTP Accept header</Description>
-          <Label>Accept</Label>
+          <Label>Client connected timestamp</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -336,8 +247,8 @@
           </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
-          <Description>HTTP Referer header</Description>
-          <Label>Referer</Label>
+          <Description>Used for determining parallel executed log entries.</Description>
+          <Label>Sent request timestamp</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
