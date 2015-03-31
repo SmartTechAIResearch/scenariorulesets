@@ -130,7 +130,7 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
-		<LogSyntaxItem>
+        <LogSyntaxItem>
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
@@ -158,7 +158,7 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
-		<LogSyntaxItem>
+        <LogSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -171,7 +171,7 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
-		<LogSyntaxItem>
+        <LogSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -192,13 +192,14 @@
           </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
-          <Description></Description>
+          <Description>
+          </Description>
           <Label>Destination host</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
-	   <LogSyntaxItem>
+        <LogSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -210,8 +211,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>		
-		<LogSyntaxItem>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
@@ -226,15 +227,30 @@
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
         <LogSyntaxItem>
-          <Items />
+          <Items>
+            <Rule>
+              <Items />
+              <RegExp>
+              </RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>boolType</ValueType>
+              <UsePasswordChar>False</UsePasswordChar>
+              <Description>
+              </Description>
+              <Label>Boolean</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+          </Items>
           <Optional>True</Optional>
           <Occurance>1</Occurance>
           <DefaultValue>
           </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
-          <Description>Used for determining parallel executed log entries.</Description>
-          <Label>Client connected timestamp</Label>
+          <Description>Used for determining the number of parallel connections.</Description>
+          <Label>New connection</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -247,8 +263,23 @@
           </DefaultValue>
           <ChildDelimiter>
           </ChildDelimiter>
-          <Description>Used for determining parallel executed log entries.</Description>
-          <Label>Sent request timestamp</Label>
+          <Description>The offset in ms from the previous response received.</Description>
+          <Label>Begin request timestamp</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </LogSyntaxItem>
+        <LogSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>
+          </Description>
+          <Label>Response received timestamp</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -260,8 +291,9 @@
       <BeginCommentString>&lt;!--</BeginCommentString>
       <EndCommentString>--&gt;</EndCommentString>
       <ActionizeOnComment>True</ActionizeOnComment>
-      <BeginTimestampIndex>10</BeginTimestampIndex>
-      <EndTimestampIndex>11</EndTimestampIndex>
+      <NewConnectionIndex>12</NewConnectionIndex>
+      <BeginRequestTimestampIndex>13</BeginRequestTimestampIndex>
+      <ResponseReceivedTimestampIndex>14</ResponseReceivedTimestampIndex>
       <Description>
       </Description>
       <Label>HTTP(S) @BRANCH@-@TM@</Label>
