@@ -226,64 +226,6 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items>
-            <Rule>
-              <Items />
-              <RegExp>
-              </RegExp>
-              <IgnoreCase>False</IgnoreCase>
-              <ValueType>boolType</ValueType>
-              <UsePasswordChar>False</UsePasswordChar>
-              <Description>
-              </Description>
-              <Label>Boolean</Label>
-              <ShowInGui>True</ShowInGui>
-              <IsDefaultItem>False</IsDefaultItem>
-              <IsEmpty>False</IsEmpty>
-            </Rule>
-          </Items>
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>Used for determining the number of parallel connections.</Description>
-          <Label>New connection</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>True</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>The offset in ms from the previous response received.</Description>
-          <Label>Begin request timestamp</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
-          <Items />
-          <Optional>False</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>
-          </Description>
-          <Label>Response received timestamp</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
       </Items>
       <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <SingleLineCommentString>
@@ -291,9 +233,8 @@
       <BeginCommentString>&lt;!--</BeginCommentString>
       <EndCommentString>--&gt;</EndCommentString>
       <ActionizeOnComment>True</ActionizeOnComment>
-      <NewConnectionIndex>12</NewConnectionIndex>
-      <BeginRequestTimestampIndex>13</BeginRequestTimestampIndex>
-      <ResponseReceivedTimestampIndex>14</ResponseReceivedTimestampIndex>
+      <ClientConnectedTimestampIndex>0</ClientConnectedTimestampIndex>
+      <SentRequestTimestampIndex>0</SentRequestTimestampIndex>
       <Description>
       </Description>
       <Label>HTTP(S) @BRANCH@-@TM@</Label>
