@@ -1,8 +1,8 @@
-<LogRuleSets>
+<ScenarioRuleSets>
   <Items>
-    <LogRuleSet>
+    <ScenarioRuleSet>
       <Items>
-        <LogSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -15,8 +15,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items>
             <Rule>
               <Items />
@@ -56,12 +56,12 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items>
-            <LogSyntaxItem>
+            <ScenarioSyntaxItem>
               <Items>
-                <LogSyntaxItem>
+                <ScenarioSyntaxItem>
                   <Items />
                   <Optional>False</Optional>
                   <Occurance>1</Occurance>
@@ -75,8 +75,8 @@
                   <ShowInGui>True</ShowInGui>
                   <IsDefaultItem>False</IsDefaultItem>
                   <IsEmpty>False</IsEmpty>
-                </LogSyntaxItem>
-                <LogSyntaxItem>
+                </ScenarioSyntaxItem>
+                <ScenarioSyntaxItem>
                   <Items />
                   <Optional>True</Optional>
                   <Occurance>1</Occurance>
@@ -90,7 +90,7 @@
                   <ShowInGui>True</ShowInGui>
                   <IsDefaultItem>False</IsDefaultItem>
                   <IsEmpty>False</IsEmpty>
-                </LogSyntaxItem>
+                </ScenarioSyntaxItem>
               </Items>
               <Optional>True</Optional>
               <Occurance>0</Occurance>
@@ -103,7 +103,7 @@
               <ShowInGui>True</ShowInGui>
               <IsDefaultItem>False</IsDefaultItem>
               <IsEmpty>False</IsEmpty>
-            </LogSyntaxItem>
+            </ScenarioSyntaxItem>
           </Items>
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -115,8 +115,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
@@ -129,8 +129,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
@@ -143,8 +143,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
@@ -157,8 +157,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -170,8 +170,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -183,8 +183,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -198,8 +198,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -211,8 +211,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
@@ -225,7 +225,7 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
+        </ScenarioSyntaxItem>
       </Items>
       <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <SingleLineCommentString>
@@ -241,6 +241,6 @@
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>
-    </LogRuleSet>
+    </ScenarioRuleSet>
   </Items>
-</LogRuleSets>
+</ScenarioRuleSets>

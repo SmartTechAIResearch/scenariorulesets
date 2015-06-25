@@ -1,6 +1,6 @@
-<LogRuleSets>
+<ScenarioRuleSets>
   <Items>
-    <LogRuleSet>
+    <ScenarioRuleSet>
       <Items />
       <Category>
       </Category>
@@ -18,6 +18,6 @@
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>
-    </LogRuleSet>
+    </ScenarioRuleSet>
   </Items>
-</LogRuleSets>
+</ScenarioRuleSets>

@@ -1,6 +1,6 @@
-<LogRuleSets>
+<ScenarioRuleSets>
   <Items>
-    <LogRuleSet>
+    <ScenarioRuleSet>
       <Items />
       <ChildDelimiter>
       </ChildDelimiter>
@@ -15,6 +15,6 @@
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>
-    </LogRuleSet>
+    </ScenarioRuleSet>
   </Items>
-</LogRuleSets>
+</ScenarioRuleSets>

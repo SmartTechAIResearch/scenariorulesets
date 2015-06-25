@@ -1,8 +1,8 @@
-<LogRuleSets>
+<ScenarioRuleSets>
   <Items>
-    <LogRuleSet>
+    <ScenarioRuleSet>
       <Items>
-        <LogSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -14,8 +14,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -27,8 +27,8 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
-        <LogSyntaxItem>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items />
           <Optional>False</Optional>
           <Occurance>1</Occurance>
@@ -40,7 +40,7 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
+        </ScenarioSyntaxItem>
       </Items>
       <ChildDelimiter>;</ChildDelimiter>
       <SingleLineCommentString>
@@ -59,6 +59,6 @@
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>
-    </LogRuleSet>
+    </ScenarioRuleSet>
   </Items>
-</LogRuleSets>
+</ScenarioRuleSets>

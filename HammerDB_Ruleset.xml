@@ -1,8 +1,8 @@
-<LogRuleSets>
+<ScenarioRuleSets>
   <Items>
-    <LogRuleSet>
+    <ScenarioRuleSet>
       <Items>
-        <LogSyntaxItem>
+        <ScenarioSyntaxItem>
           <Items>
             <Rule>
               <Items />
@@ -83,7 +83,7 @@
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
-        </LogSyntaxItem>
+        </ScenarioSyntaxItem>
       </Items>
       <ChildDelimiter>
       </ChildDelimiter>
@@ -98,6 +98,6 @@
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>
-    </LogRuleSet>
+    </ScenarioRuleSet>
   </Items>
-</LogRuleSets>
+</ScenarioRuleSets>
