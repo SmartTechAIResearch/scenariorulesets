@@ -23,7 +23,7 @@
               <RegExp>^GET$</RegExp>
               <IgnoreCase>False</IgnoreCase>
               <ValueType>stringType</ValueType>
-              <UsePasswordChar>False</UsePasswordChar>
+              <DisplayAsPassword>False</DisplayAsPassword>
               <Description>
               </Description>
               <Label>GET</Label>
@@ -36,7 +36,7 @@
               <RegExp>^POST$</RegExp>
               <IgnoreCase>False</IgnoreCase>
               <ValueType>stringType</ValueType>
-              <UsePasswordChar>False</UsePasswordChar>
+              <DisplayAsPassword>False</DisplayAsPassword>
               <Description>
               </Description>
               <Label>POST</Label>
@@ -226,6 +226,65 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items>
+            <Rule>
+              <Items />
+              <RegExp>
+              </RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>uintType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>
+              </Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+          </Items>
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>0</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>Offset in millis, from the last response of previous set op parallel requests, for when a request can be executed.</Description>
+          <Label>Offset</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items>
+            <Rule>
+              <Items />
+              <RegExp>
+              </RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>boolType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>
+              </Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+          </Items>
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>False</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>
+          </Description>
+          <Label>Redirects</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
       </Items>
       <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <SingleLineCommentString>
@@ -233,8 +292,9 @@
       <BeginCommentString>&lt;!--</BeginCommentString>
       <EndCommentString>--&gt;</EndCommentString>
       <ActionizeOnComment>True</ActionizeOnComment>
-      <ClientConnectedTimestampIndex>0</ClientConnectedTimestampIndex>
-      <SentRequestTimestampIndex>0</SentRequestTimestampIndex>
+      <HostnameIndex>9</HostnameIndex>
+      <OffsetInMillisIndex>12</OffsetInMillisIndex>
+      <RedirectsIndex>13</RedirectsIndex>
       <Description>
       </Description>
       <Label>HTTP(S) @BRANCH@-@TM@</Label>
