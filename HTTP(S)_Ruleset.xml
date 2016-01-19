@@ -297,7 +297,7 @@
       <RedirectsIndex>13</RedirectsIndex>
       <Description>
       </Description>
-      <Label>HTTP(S) @BRANCH-@TM</Label>
+      <Label>HTTP(S) @BRANCH@-@TM@</Label>
       <ShowInGui>True</ShowInGui>
       <IsDefaultItem>False</IsDefaultItem>
       <IsEmpty>False</IsEmpty>
