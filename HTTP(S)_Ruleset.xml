@@ -3,20 +3,6 @@
     <ScenarioRuleSet>
       <Items>
         <ScenarioSyntaxItem>
-          <Items />
-          <Optional>False</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>If for instance the URL in the connection is set to "http://www.foo.com" this could be /index.htm.</Description>
-          <Label>Relative URL</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </ScenarioSyntaxItem>
-        <ScenarioSyntaxItem>
           <Items>
             <Rule>
               <Items />
@@ -53,6 +39,61 @@
           </ChildDelimiter>
           <Description>"GET" or "POST"</Description>
           <Label>Request method</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>http</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>The protocol (http or https).</Description>
+          <Label>Protocol</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>
+          </Description>
+          <Label>Host</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>80</DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>The destination port.</Description>
+          <Label>Port</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items />
+          <Optional>False</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
+          <ChildDelimiter>
+          </ChildDelimiter>
+          <Description>If for instance the URL in the connection is set to "http://www.foo.com" this could be /index.htm.</Description>
+          <Label>Relative Url</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
@@ -173,47 +214,6 @@
         </ScenarioSyntaxItem>
         <ScenarioSyntaxItem>
           <Items />
-          <Optional>False</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>http</DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>The protocol (http or https).</Description>
-          <Label>Protocol</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </ScenarioSyntaxItem>
-        <ScenarioSyntaxItem>
-          <Items />
-          <Optional>False</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>
-          </DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>
-          </Description>
-          <Label>Destination host</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </ScenarioSyntaxItem>
-        <ScenarioSyntaxItem>
-          <Items />
-          <Optional>False</Optional>
-          <Occurance>1</Occurance>
-          <DefaultValue>80</DefaultValue>
-          <ChildDelimiter>
-          </ChildDelimiter>
-          <Description>The destination port.</Description>
-          <Label>Destination Port</Label>
-          <ShowInGui>True</ShowInGui>
-          <IsDefaultItem>False</IsDefaultItem>
-          <IsEmpty>False</IsEmpty>
-        </ScenarioSyntaxItem>
-        <ScenarioSyntaxItem>
-          <Items />
           <Optional>True</Optional>
           <Occurance>1</Occurance>
           <DefaultValue>
@@ -292,7 +292,7 @@
       <BeginCommentString>&lt;!--</BeginCommentString>
       <EndCommentString>--&gt;</EndCommentString>
       <ActionizeOnComment>True</ActionizeOnComment>
-      <HostnameIndex>9</HostnameIndex>
+      <HostnameIndex>3</HostnameIndex>
       <OffsetInMillisIndex>12</OffsetInMillisIndex>
       <RedirectsIndex>13</RedirectsIndex>
       <Description>
