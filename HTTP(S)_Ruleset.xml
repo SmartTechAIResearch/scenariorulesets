@@ -285,6 +285,65 @@
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
         </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items>
+            <ScenarioSyntaxItem>
+              <Items>
+                <ScenarioSyntaxItem>
+                  <Items />
+                  <Optional>False</Optional>
+                  <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Key</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </ScenarioSyntaxItem>
+                <ScenarioSyntaxItem>
+                  <Items />
+                  <Optional>True</Optional>
+                  <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Value</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </ScenarioSyntaxItem>
+              </Items>
+              <Optional>True</Optional>
+              <Occurance>0</Occurance>
+              <DefaultValue>
+              </DefaultValue>
+              <ChildDelimiter>: </ChildDelimiter>
+              <Description>
+              </Description>
+              <Label>KeyValuePair</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </ScenarioSyntaxItem>
+          </Items>
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
+          <ChildDelimiter>&lt;16 0C 02 13$&gt;</ChildDelimiter>
+          <Description>e.g.: "backColor: blue&lt;16 0C 02 13$&gt;foreColor: red"</Description>
+          <Label>Custom headers</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
       </Items>
       <ChildDelimiter>&lt;16 0C 02 12$&gt;</ChildDelimiter>
       <SingleLineCommentString>
