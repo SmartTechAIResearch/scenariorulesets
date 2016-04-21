@@ -4,6 +4,19 @@
       <Items>
         <ScenarioSyntaxItem>
           <Items>
+			<Rule>
+              <Items />
+              <RegExp>^DELETE$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>DELETE</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
             <Rule>
               <Items />
               <RegExp>^GET$</RegExp>
@@ -19,6 +32,45 @@
             </Rule>
             <Rule>
               <Items />
+              <RegExp>^HEAD$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>HEAD</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>			
+            <Rule>
+              <Items />
+              <RegExp>^OPTIONS$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>OPTIONS</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+			<Rule>
+              <Items />
+              <RegExp>^PATCH$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>PATCH</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+            <Rule>
+              <Items />
               <RegExp>^POST$</RegExp>
               <IgnoreCase>False</IgnoreCase>
               <ValueType>stringType</ValueType>
@@ -26,6 +78,32 @@
               <Description>
               </Description>
               <Label>POST</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>
+			<Rule>
+              <Items />
+              <RegExp>^PUT$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>PUT</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </Rule>			
+            <Rule>
+              <Items />
+              <RegExp>^TRACE$</RegExp>
+              <IgnoreCase>False</IgnoreCase>
+              <ValueType>stringType</ValueType>
+              <DisplayAsPassword>False</DisplayAsPassword>
+              <Description>
+              </Description>
+              <Label>TRACE</Label>
               <ShowInGui>True</ShowInGui>
               <IsDefaultItem>False</IsDefaultItem>
               <IsEmpty>False</IsEmpty>
@@ -281,6 +359,65 @@
           <Description>
           </Description>
           <Label>Redirects</Label>
+          <ShowInGui>True</ShowInGui>
+          <IsDefaultItem>False</IsDefaultItem>
+          <IsEmpty>False</IsEmpty>
+        </ScenarioSyntaxItem>
+        <ScenarioSyntaxItem>
+          <Items>
+            <ScenarioSyntaxItem>
+              <Items>
+                <ScenarioSyntaxItem>
+                  <Items />
+                  <Optional>False</Optional>
+                  <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Key</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </ScenarioSyntaxItem>
+                <ScenarioSyntaxItem>
+                  <Items />
+                  <Optional>True</Optional>
+                  <Occurance>1</Occurance>
+                  <DefaultValue>
+                  </DefaultValue>
+                  <ChildDelimiter>
+                  </ChildDelimiter>
+                  <Description>
+                  </Description>
+                  <Label>Value</Label>
+                  <ShowInGui>True</ShowInGui>
+                  <IsDefaultItem>False</IsDefaultItem>
+                  <IsEmpty>False</IsEmpty>
+                </ScenarioSyntaxItem>
+              </Items>
+              <Optional>True</Optional>
+              <Occurance>0</Occurance>
+              <DefaultValue>
+              </DefaultValue>
+              <ChildDelimiter>: </ChildDelimiter>
+              <Description>
+              </Description>
+              <Label>KeyValuePair</Label>
+              <ShowInGui>True</ShowInGui>
+              <IsDefaultItem>False</IsDefaultItem>
+              <IsEmpty>False</IsEmpty>
+            </ScenarioSyntaxItem>
+          </Items>
+          <Optional>True</Optional>
+          <Occurance>1</Occurance>
+          <DefaultValue>
+          </DefaultValue>
+          <ChildDelimiter>&lt;16 0C 02 13$&gt;</ChildDelimiter>
+          <Description>e.g.: "backColor: blue&lt;16 0C 02 13$&gt;foreColor: red"</Description>
+          <Label>Custom headers</Label>
           <ShowInGui>True</ShowInGui>
           <IsDefaultItem>False</IsDefaultItem>
           <IsEmpty>False</IsEmpty>
